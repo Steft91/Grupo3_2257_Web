@@ -4,6 +4,8 @@
 
 body{
     background-image: url(../img/bosque.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; 
     margin: 0;
     display: flex;
     justify-content: center;
@@ -145,16 +147,4 @@ body{
   
   .social-account-container .social-accounts .social-button:active {
     transform: scale(0.9);
-  }
-  
-  .agreement {
-    display: block;
-    text-align: center;
-    margin-top: 15px;
-  }
-  
-  .agreement a {
-    text-decoration: none;
-    color: #286f39;
-    font-size: 9px;
   }
