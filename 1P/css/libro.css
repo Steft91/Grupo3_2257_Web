@@ -1,3 +1,10 @@
+body {
+    background-image: url(../img/bosque.jpg);
+    min-height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 .card{
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.63);
     margin: 0 auto;
@@ -34,6 +41,10 @@
 
 .cardHeader:hover .fondoBoton{
     opacity: 1;
+}
+
+.cardBody {
+    background-color: white;
 }
 
 .botonDetalles {
