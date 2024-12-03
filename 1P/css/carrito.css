@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.principal{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #e0e6e0;
+    height: 100px;
+    color: rgb(255, 255, 255);
+    padding: 0 20px;
+    border: solid 1px rgb(107, 100, 100);
+}
+.izquierda{
+    flex: 1;
+}
+.derecha{
+    display: flex;
+    flex: 2;
+    gap: 50px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.derecha a{
+    text-decoration: none;
+    color: black;
+}
+.sign-in{
+    flex: 0;
+    display: flex;
+    flex: 3;
+    color: black;
+    margin-left: 900px;
+}
+.sign-in a{
+    text-decoration: none;
+    color: black;
+}
+.textoPago{
+    font-size: 36px;
+    margin-top: 25px;
+    background-color: white;
+    height: 125px;
+}
+.checkout{
+    display: flex;
+    justify-content: space-between;
+    background-color: #fafafa;
+    height: 100px;
+    color: rgb(88, 85, 85);
+    gap: 15px;
+    padding: 20px;
+    margin: 25px 50px;
+}
+.shoppingCart{
+    flex: 4;
+    height: 400px;
+    border-radius: 5px;
+    border: solid 1px rgb(107, 100, 100);
+    margin-right: 10px;
+}
+.paymentMethod{
+    flex: 1;
+    height: 500px;
+    border-radius: 5px;
+    border: solid 1px rgb(107, 100, 100)
+}
+.shoppingCart, .paymentMethod{
+    font-size: 12px;
+    padding: 20px;
+    border-radius: 5px;
+    border: solid 1px rgb(107, 100, 100);
+}
+label{
+    font-size: 18px;
+    padding-top: 10px;
+}
+input{
+    margin: 10px 0;
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+button{
+    margin-top: 15px;
+    padding: 10px 50px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #45a049;
+}
+.information{
+    padding: 20px; 
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.information label {
+    margin-bottom: 5px; 
+}
+.information input,.information button {
+    margin-bottom: 15px;
+}
