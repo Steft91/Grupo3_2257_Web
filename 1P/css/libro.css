@@ -5,28 +5,34 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 }
-.card{
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.63);
-    margin: 0 auto;
-    height: 600px;
-    margin-top: 40px;
-    width: 500px;
-    border-radius: 10px;
-    overflow: hidden;
+
+.cards {
     display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+    gap: 20px; 
 }
 
-.cardHeader{
-    position: relative;
-    width: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
+.card {
+    display: flex;
+    flex-direction: row;
+    height: 500px;
+    width: 48%; 
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: antiquewhite;
+}
+
+.cardHeader {
+    width: 60%;
+    height: 500px;
     background-size: cover;
-    transition: all 0.3s ease;
+    background-position: center;
 }
 
 .cardHeader .fondoBoton{
-    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -44,7 +50,31 @@ body {
 }
 
 .cardBody {
-    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    width: 40%;
+    background-color: antiquewhite;
+}
+
+.cardContent {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.headerPrecio {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.precio {
+    font-size: 1.2em;
+    color: green;
 }
 
 .botonDetalles {
@@ -60,16 +90,4 @@ body {
 
 .botonDetalles:hover {
     background-color: rgba(207, 230, 107, 0.9);
-}
-
-h4{
-    font-weight: normal;
-    color: rgb(90, 90, 90);
-    margin-top: 10px;
-}
-
-.cardContent{
-    height: 300px;
-    background-color: white;
-    padding: 40px;
 }
