@@ -1,0 +1,29 @@
+
+.container {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.content {
+    flex: 1 1 70%;
+    padding: 10px;
+    box-sizing: border-box;
+    min-width: 300px;
+}
+
+.asides{
+    display: flex;
+    flex-direction: column;
+}
+
+.barraIzq {
+    background-color: #7ac998;
+    padding: 5px;
+    box-sizing: border-box;
+    min-width: 300px;
+    max-width: fit-content;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+}
