@@ -15,7 +15,7 @@
         </nav>
     </header>
     <Section class="container"> 
-        <aside class="sidebar">
+        <aside class="sidebar" style="flex: 2;">
             <ul>
                 <h2>Categorías</h2>
                 <li><a href="#Terror">Categoría Terror</a></li>
@@ -25,15 +25,15 @@
                 <li><a href="#Autoayuda">Categoría Autoayuda</a></li>
             </ul>
         </aside>
-        <section class="content">
+        <section class="content" style="flex: 6;">
             <div class="cards">
-                <h3>Terror</h3>
+                <h2>Terror</h2>
                 <section id="Terror" class="categoria">
-                    <div class="card">                        
+                    <div class="card" id="Drácula">                        
                         <div class="cardHeader">
                             <img src="img/libroTerror.jpg" alt="terror" class="cardImagen">
                             <div class="fondoBoton">
-                                <button class="botonDetalles">View Details</button>
+                                <button class="botonDetalles"><a href="libros.html">View Details</a></button>
                             </div>
                         </div>
                         
@@ -51,7 +51,7 @@
                         <div class="cardHeader">
                             <img src="img/terror2.jpg" alt="terror" class="cardImagen">
                             <div class="fondoBoton">
-                                <button class="botonDetalles">View Details</button>
+                                <button class="botonDetalles"><a href="libros.html">View Details</a></button>
                             </div>
                         </div>
                         <div class="cardBody">
@@ -66,13 +66,13 @@
                     </div>
                 </section>
 
-                <h2>Fantasia</h2>
+                <h2>Fantasía</h2>
                 <section id="Fantasia" class="categoria">
                         <div class="card">
                             <div class="cardHeader">
                                 <img src="img/elsranillos.jpg" alt="terror" class="cardImagen">
                                 <div class="fondoBoton">
-                                    <button class="botonDetalles">View Details</button>
+                                    <button class="botonDetalles"><a href="libros.html">View Details</a></button>
                                 </div>
                             </div>
                             <div class="cardBody">
@@ -90,7 +90,7 @@
                             <div class="cardHeader">
                                 <img src="img/harrypotter.jpg" alt="terror" class="cardImagen">
                                 <div class="fondoBoton">
-                                    <button class="botonDetalles">View Details</button>
+                                    <button class="botonDetalles"><a href="libros.html">View Details</a></button>
                                 </div>
                             </div>
                             <div class="cardBody">
@@ -111,7 +111,7 @@
                             <div class="cardHeader">
                                 <img src="img/cbyn1Drama.webp" alt="Drama" class="cardImagen">
                                 <div class="fondoBoton">
-                                    <button class="botonDetalles">View Details</button>
+                                    <button class="botonDetalles"><a href="libros.html">View Details</a></button>
                                 </div>
                             </div>
                             <div class="cardBody">
@@ -129,7 +129,7 @@
                             <div class="cardHeader">
                                 <img src="img/invisibleDrama.jpg" alt="Drama" class="cardImagen">
                                 <div class="fondoBoton">
-                                    <button class="botonDetalles">View Details</button>
+                                    <button class="botonDetalles"><a href="libros.html">View Details</a></button>
                                 </div>
                             </div>
                             <div class="cardBody">
@@ -150,7 +150,7 @@
                             <div class="cardHeader">
                                 <img src="img/romeoClasico.jpg" alt="Clasico" class="cardImagen">
                                 <div class="fondoBoton">
-                                    <button class="botonDetalles">View Details</button>
+                                    <button class="botonDetalles"><a href="libros.html">View Details</a></button>
                                 </div>
                             </div>
                             <div class="cardBody">
@@ -168,7 +168,7 @@
                             <div class="cardHeader">
                                 <img src="img/littlewomenClasico.jpg" alt="Clasico" class="cardImagen">
                                 <div class="fondoBoton">
-                                    <button class="botonDetalles">View Details</button>
+                                    <button class="botonDetalles"><a href="libros.html">View Details</a></button>
                                 </div>
                             </div>
                             <div class="cardBody">
@@ -190,7 +190,7 @@
                             <div class="cardHeader">
                                 <img src="img/autoayuda1.jpg" alt="autoayuda" class="cardImagen">
                                 <div class="fondoBoton">
-                                    <button class="botonDetalles">View Details</button>
+                                    <button class="botonDetalles"><a href="libros.html">View Details</a></button>
                                 </div>
                             </div>
                             <div class="cardBody">
@@ -208,7 +208,7 @@
                             <div class="cardHeader">
                                 <img src="img/autoayuda2.jpg" alt="autoayuda" class="cardImagen">
                                 <div class="fondoBoton">
-                                    <button class="botonDetalles">View Details</button>
+                                    <button class="botonDetalles"><a href="libros.html">View Details</a></button>
                                 </div>
                             </div>
                             <div class="cardBody">
@@ -226,9 +226,19 @@
             </div>
 
         </section>
-        <aside class="sidebar1"> <!--  chatbot -->
-            <h2>Preguntas Frecuentes</h2>
-
+        <aside class="chat" style="flex: 2;">
+            <div class="ventana">
+                <div class="headerChat">
+                    <img src="img/chatbot.jpg" alt="chatbot" class="imgChatbot">
+                    <h3>Chatea con Nosotros</h3>
+                    <button class="btnX">X</button>                    
+                </div>
+                <div class="contenidoChat">
+                    <h4>Hola! ¿En qué podemos ayudarte?</h4>
+                    <textarea name="mensaje" id="mensaje" placeholder="Escribe tu mensaje..." rows="10"></textarea>
+                    <button class="enviar">Enviar</button>
+                </div>
+            </div>
         </aside>
     </Section>
 

@@ -30,10 +30,13 @@ nav {
 
 .container {
     display: flex;
-    flex-direction: column;
     margin-top: 140px;
-    padding: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
     gap: 20px;
+    text-align: center;
+    align-items: center;
 }
 
 .libros {
@@ -43,6 +46,8 @@ nav {
 }
 
 .libro {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
     background-color: rgba(214, 203, 160, 0.85);
     padding: 20px;
     border-radius: 10px;
@@ -51,8 +56,27 @@ nav {
     flex-direction: column;
     align-items: center;
     gap: 20px;
-    max-width: 1000px;
+    max-width: 500px;
     margin: 0 auto;
+}
+
+.libro:hover {
+    transform: scale(1.05);
+}
+
+.descuento {
+    position: absolute;
+    top: 10px;
+    right: 5px;
+    background: rgb(218, 69, 69);
+    color: #fff;
+    padding: 5px 10px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    animation: pulso 1s infinite;
+    transition: background-color 0.3s;
 }
 
 .imgLibros {
@@ -62,18 +86,59 @@ nav {
 }
 
 .infoTitulo {
-    font-size: 1.8rem;
+    font-size: 1.3rem;
     font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     color: #4c8353;
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+    transition: none; 
 }
 
-.infoPrecio, .infoAutor, .infoEditorial, .infoCategoria {
+.libro:hover .infoTitulo {
+    animation: escribir 2s steps(20) forwards;
+}
+
+.infoPrecio {
+    font-size: 1.2rem; 
+    font-weight: bold; 
+    color: #c42b5e; 
+    margin: 10px 0; 
+}
+
+.infoAutor {
     font-size: 1rem;
-    margin: 5px;
+    font-weight: normal;
+    color: #333; 
+    margin: 5px 0;
+}
+
+.infoEditorial {
+    font-size: 1rem;
+    font-weight: normal;
+    font-style: italic; 
+    color: #555; 
+    margin: 5px 0;
+}
+
+.infoCategoria {
+    font-size: 0.9rem; 
+    color: #777; 
+    margin: 5px 0;
+    display: flex; 
+    align-items: center; 
+}
+
+.infoCategoria .iconoCategoria {
+    font-size: 1.2rem;
+    margin-right: 5px;
+    color: #4CAF50; 
 }
 
 button {
-    background-color: #5fad7d;
+    background-color: #3d6d50;
+    color: white;
     border: none;
     padding: 10px;
     border-radius: 5px;
@@ -98,8 +163,6 @@ button:hover {
     background-color: rgba(214, 203, 160, 0.85);
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
-    backdrop-filter: blur(3px);
-
 }
 
 .headerChat {
@@ -156,6 +219,7 @@ textarea {
     border-radius: 5px;
     font-size: 1rem;
     resize: none;
+    margin-top: 10px;
 }
 
 .enviar {
@@ -239,4 +303,22 @@ footer .icono img {
 footer .icono:hover img {
     transform: scale(1.1);
     transition: transform 0.3s ease;
+}
+
+@keyframes escribir {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes pulso {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
 }
