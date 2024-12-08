@@ -30,6 +30,46 @@ p, button {
     min-height: 100vh;
 }
 
+
+#modoOscuro {
+    display: none;
+}
+
+.modoOscuroInterruptor {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 25px;
+    background-color: rgba(214, 203, 160, 0.85);
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.modoOscuroInterruptor::before {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 19px;
+    height: 19px;
+    background-color: white;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+i {
+    margin-right: 10px;
+}
+
+#modoOscuro:checked + .modoOscuroInterruptor {
+    background-color: #000000; 
+}
+
+#modoOscuro:checked + .modoOscuroInterruptor::before {
+    transform: translateX(25px);
+}
+
 #modoOscuro:checked ~ .contenedor {
     background-image: url('../img/bosqueNocturno.jpeg');
     color: #d1d1d1;
@@ -49,6 +89,48 @@ p, button {
     background-color: rgba(20, 20, 20, 0.9);
 }
 
+#modoOscuro:checked ~ .contenedor .chat {
+    background-color: rgba(50, 50, 50, 0.85);
+}
+
+#modoOscuro:checked ~ .contenedor .headerChat {
+    background-color: #68975a;
+}
+
+#modoOscuro:checked ~ .contenedor .enviar {
+    background-color: #68975a ;
+}
+
+#modoOscuro:checked ~ .contenedor textarea {
+    background-color: #cccccc;
+}
+
+#modoOscuro:checked ~ .contenedor  .contenidoChat h4{
+    color: white;
+}
+
+#modoOscuro:checked ~ .contenedor .infoTitulo {
+    color: #4CAF50;
+}
+
+#modoOscuro:checked ~ .contenedor .infoPrecio {
+    color: #fa4682;
+}
+
+#modoOscuro:checked ~ .contenedor .infoAutor,
+#modoOscuro:checked ~ .contenedor .infoEditorial,
+#modoOscuro:checked ~ .contenedor .infoCategoria {
+    color: white;
+}
+
+#modoOscuro:checked ~ .contenedor .descripcion {
+    color: rgb(211, 211, 211);
+}
+
+
+
+
+
 .container {
     display: flex;
     margin-top: 140px;
@@ -67,6 +149,7 @@ p, button {
 }
 
 .libro {
+    position: relative;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     background-color: rgba(214, 203, 160, 0.85);
@@ -155,6 +238,11 @@ p, button {
     font-size: 1.2rem;
     margin-right: 5px;
     color: #4CAF50; 
+}
+
+.descripcion {
+    color: #383838;
+    text-align: justify;
 }
 
 button {
@@ -258,6 +346,7 @@ textarea {
     background-color: rgb(34, 139, 34);
     transform: scale(1.05);
 }
+
 
 footer{
     padding: 40px 20px;
