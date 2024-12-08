@@ -18,6 +18,109 @@ nav {
     z-index: 900;
 }
 
+#modoOscuro {
+    display: none;
+}
+
+.modoOscuroInterruptor {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: inline-block;
+    width: 50px;
+    height: 25px;
+    background-color: rgba(214, 203, 160, 0.85);
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    z-index: 1000;
+}
+
+.modoOscuroInterruptor::before {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 19px;
+    height: 19px;
+    background-color: white;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+i {
+    margin-right: 10px;
+}
+
+#modoOscuro:checked + .modoOscuroInterruptor {
+    background-color: #000000; 
+}
+
+#modoOscuro:checked + .modoOscuroInterruptor::before {
+    transform: translateX(25px);
+}
+
+#modoOscuro:checked ~ .contenedor {
+    background-image: url('../img/bosqueNoche.jpeg');
+    color: #d1d1d1;
+}
+
+#modoOscuro:checked ~ .contenedor nav {
+    background-color: rgba(45, 74, 34, 0.9);
+    color: #eee;
+}
+
+#modoOscuro:checked ~ .contenedor .introduccion {
+    color: rgb(202, 201, 201);
+}
+
+#modoOscuro:checked ~ .contenedor .acercaDeNosotros i {
+    color: #599137;
+}
+
+#modoOscuro:checked ~ .contenedor .info p{
+    color: rgb(202, 201, 201);
+}
+
+#modoOscuro:checked ~ .contenedor .info h3{
+    color: #f5d798;
+}
+
+#modoOscuro:checked ~ .contenedor .creadores h2{
+    background-color: rgba(62, 82, 52, 0.85);
+}
+
+#modoOscuro:checked ~ .contenedor .seccion {
+    background-color: rgba(62, 82, 52, 0.85);
+
+}
+
+#modoOscuro:checked ~ .contenedor .persona {
+    background-color: rgba(62, 82, 52, 0.85);
+
+}
+
+#modoOscuro:checked ~ .contenedor .acercaDeNosotros h2 {
+    color: #f5d798;
+}
+
+#modoOscuro:checked ~ .contenedor .infoPersona h4{
+    color: rgb(89, 146, 67);
+}
+
+#modoOscuro:checked ~ .contenedor .infoPersona p,
+#modoOscuro:checked ~ .contenedor .infoPersona .redes ul a{
+    color: rgb(202, 201, 201);
+}
+
+#modoOscuro:checked ~ .contenedor .infoPersona .redes ul a:hover{
+    color: #c5b275;
+}
+
+
+
+
+
 h2, h3 {
     font-family: 'Merriweather', serif;
 }
@@ -34,13 +137,13 @@ h2, h3 {
     font-size: 1rem;
     margin-right: 10px;
     text-align: center;
-    color: #eccc62;
+    color: #a38524;
 }
 
 .acercaDeNosotros {
     margin-top: 120px;
     padding: 50px 20px;
-    color: #fff;
+    color: #597927;
     text-align: center;
 }
 
@@ -72,7 +175,7 @@ h2, h3 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: rgba(91, 110, 61, 0.7);
+    background-color: rgba(235, 229, 182, 0.7);
     border-radius: 10px;
     padding: 20px;
     width: 60%;
@@ -95,13 +198,13 @@ h2, h3 {
     text-align: center;
     font-size: 1.8rem;
     margin-bottom: 15px;
-    color: #f4e7d1; 
+    color: #a38859; 
 }
 
 .info p {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 0.9rem;
-    color: #ccc;
+    color: #554e4e;
     line-height: 1.5;
 }
 
@@ -117,10 +220,10 @@ h2, h3 {
     font-size: 2rem;
     text-align: center;
     margin-bottom: 30px;
-    color: #f4e7d1; 
+    color: #645c4e; 
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     font-family: 'Georgia', serif;
-    background-color: rgba(91, 110, 61, 0.7);
+    background-color: rgba(235, 229, 182, 0.7);
     border-radius: 10px;
 }
 
@@ -133,7 +236,7 @@ h2, h3 {
 }
 
 .persona {
-    background-color: rgba(91, 110, 61, 0.7);
+    background-color: rgba(235, 229, 182, 0.7);
     border-radius: 10px;
     width: calc(33% - 20px); 
     text-align: center;
@@ -162,13 +265,13 @@ h2, h3 {
 
 .infoPersona h4 {
     font-size: 1.2rem;
-    color: #8bc763;
+    color: #819e6d;
 }
 
 .infoPersona p {
     font-family: 'Times New Roman', Times, serif;
     font-size: 1rem;
-    color: #ffffff;
+    color: rgb(78, 78, 78);
     line-height: 1.5;
 }
 
@@ -181,18 +284,20 @@ h2, h3 {
     list-style-type: none;
     color: white;
     text-decoration: none;
+    font-weight: bold;
+
 }
 
 .redes ul a{
     font-size: 13px;
     list-style-type: none;
-    color: white;
+    color: rgb(70, 70, 70);
     text-decoration: none;
     
 }
 
 .redes ul a:hover{
-    color: #b0d3ad;
+    color: #42643f;
     font-size: 14px;
     font-weight: bold;
 }
@@ -201,6 +306,10 @@ h2, h3 {
     list-style-type: none;
     color: white;
     text-decoration: none;
+}
+
+.redes img {
+    margin-right: 10px;
 }
 
 footer{
