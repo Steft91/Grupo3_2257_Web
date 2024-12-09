@@ -5,34 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/carrito.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
-    <title>Carrito  de Compra</title>
+    <title>Carrito de Compra</title>
 </head>
 <body>
-    <div class="container">
+    <header>
         <div class="principal">
             <aside class="izquierda">
-            <a href="./index.html">
-            <figure>
-            <img src="./img/logo.png" width="150px" alt="Pagina Principal">
-            </figure>
+                <a href="./index.html">
+                    <figure>
+                        <img src="./img/logo.png" width="150px" alt="Pagina Principal">
+                    </figure>
+                </a>
             </aside>
-            <aside class="derecha">
-                <a href="./index.html">Pagina Principal</a>
-                <a href="./libreria.html">Libreria</a>
+            <nav class="derecha">
+                <a href="./index.html">Página Principal</a>
+                <a href="./libreria.html">Librería</a>
                 <a href="./contacto.html">Contacto</a>
-            </aside>
+            </nav>
             <div class="sign-in">
                 <a href="./login.html">Sign in</a>
             </div>
         </div>
-        <div class="textoPago">
-            <center>
+    </header>
+
+    <main>
+        <section class="textoPago">
             <h1>Pago</h1>
-            </center>
-        </div>
-        <div class="checkout">
+        </section>
+
+        <section class="checkout">
             <aside class="shoppingCart">
-                <div class="tituloCheckout"><h1>Carrito de compra</h1></div>
+                <h2>Carrito de compra</h2>
                 <table class="cartTable">
                     <thead>
                         <tr>
@@ -64,57 +67,60 @@
                         </tr>
                     </tbody>
                 </table>
-                <div class="subtotal">
-                    Subtotal: $62.30
-                </div>
+                <div class="subtotal">Subtotal: $62.30</div>
             </aside>
-            <div class="paymentMethod">
+
+            <section class="paymentMethod">
                 <div class="information">
-                <div class="tituloPayment"><h1>Tu informacion</h1></div>
-                <div><label>E-mail</label><br><input type="text" placeholder="jeff@gmail.com"></div>
-            </div>
-            <div class="paymentOptions">
-                <p>Métodos de pago</p>
-                <div class="payment-method">
-                    <label>
-                        <input type="radio" name="payment" value="PayPal">
-                        <img src="./img/paypal.webp" alt="PayPal" width="50px">
-                    </label>
-                    <label>
-                        <input type="radio" name="payment" value="Visa">
-                        <img src="./img/visa.webp" alt="Visa" width="50px">
-                    </label>
-                    <label>
-                        <input type="radio" name="payment" value="MasterCard">
-                        <img src="./img/mastercard.jpg" alt="MasterCard" width="50px">
-                    </label>
-                    <label>
-                        <input type="radio" name="payment" value="Amex">
-                        <img src="./img/amex.png" alt="American Express" width="50px">
-                    </label>
+                    <h2>Tu información</h2>
+                    <div>
+                        <label>E-mail</label><br>
+                        <input type="text" placeholder="jeff@gmail.com">
+                    </div>
                 </div>
-                <button>Comprar ahora</button>
-            </div>
-            </div>
-        </div>
-    </div>  
+                <div class="paymentOptions">
+                    <h3>Métodos de pago</h3>
+                    <div class="payment-method">
+                        <label>
+                            <input type="radio" name="payment" value="PayPal">
+                            <img src="./img/paypal.webp" alt="PayPal" width="50px">
+                        </label>
+                        <label>
+                            <input type="radio" name="payment" value="Visa">
+                            <img src="./img/visa.webp" alt="Visa" width="50px">
+                        </label>
+                        <label>
+                            <input type="radio" name="payment" value="MasterCard">
+                            <img src="./img/mastercard.jpg" alt="MasterCard" width="50px">
+                        </label>
+                        <label>
+                            <input type="radio" name="payment" value="Amex">
+                            <img src="./img/amex.png" alt="American Express" width="50px">
+                        </label>
+                    </div>
+                    <button>Comprar ahora</button>
+                </div>
+            </section>
+        </section>
+    </main>
+
     <footer>
         <section class="infoFooter">
             <section class="logoFooter">
                 <img src="img/logo.png" alt="logo" class="fotoFooter">
-                <h2>El bosque de los libros</h2>
-                <p> <i class="fa-solid fa-map-pin"></i> Moreno Bellido #200 y Av. Amazonas </p>
-                <p> <i class="fa-solid fa-phone"></i> +593 998765412</p>
+                <h2>El Bosque de los Libros</h2>
+                <p><i class="fa-solid fa-map-pin"></i> Moreno Bellido #200 y Av. Amazonas</p>
+                <p><i class="fa-solid fa-phone"></i> +593 998765412</p>
                 <p><i class="fa-solid fa-envelope"></i><a href="mailto:elbosquedeloslibros@libreria.com">elbosquedeloslibros@libreria.com</a></p>
             </section>
             <section class="infoDerecha">
                 <section class="redesSociales">
-                    <a href="https://www.facebook.com/?locale=es_LA" class="icono"><img src="img/facebook.png" alt="Facebook" ></a>
-                    <a href="https://www.instagram.com/" class="icono"><img src="img/Instagram.webp" alt="Ig" ></a>
-                    <a href="https://twitter.com/?lang=es" class="icono"><img src="img/x.jpg" alt="X" ></a>
+                    <a href="https://www.facebook.com/?locale=es_LA" class="icono"><img src="img/facebook.png" alt="Facebook"></a>
+                    <a href="https://www.instagram.com/" class="icono"><img src="img/Instagram.webp" alt="Instagram"></a>
+                    <a href="https://twitter.com/?lang=es" class="icono"><img src="img/x.jpg" alt="X"></a>
                 </section>  
-                &copy; Libreria El Bosque de los libros
-                <p><i class="fa-solid fa-people-group"></i>Realizado por el Grupo 3</p>              
+                <p>&copy; Librería El Bosque de los Libros</p>
+                <p><i class="fa-solid fa-people-group"></i> Realizado por el Grupo 3</p>              
             </section>
         </section>
     </footer>
