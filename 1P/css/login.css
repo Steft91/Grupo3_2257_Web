@@ -30,13 +30,6 @@ body{
     text-align: center;
   }
   
-  .heading {
-    text-align: center;
-    font-weight: 900;
-    font-size: 30px;
-    color: rgb(34, 81, 17);
-  }
-  
   .form {
     margin-top: 20px;
   }
