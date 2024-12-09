@@ -3,6 +3,11 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+a{
+    text-decoration: none;
+    color: black;
+}
+
 header {
     height: 5px;
 }
@@ -309,6 +314,34 @@ h2, h3 {
 }
 
 .redes img {
+    margin-right: 10px;
+}
+
+.Proyectos h4 {
+    margin-bottom: 8px;
+}
+
+.Proyectos ul{
+    font-size: 13px;
+    list-style-type: none;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.Proyectos ul a:hover{
+    color: #42643f;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.Proyectos ul:visited {
+    list-style-type: none;
+    color: white;
+    text-decoration: none;
+}
+
+.Proyectos img {
     margin-right: 10px;
 }
 
