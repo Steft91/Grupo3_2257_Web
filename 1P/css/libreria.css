@@ -31,6 +31,10 @@ body {
     margin-bottom: 120px;
 }
 
+.contenedor .cardTitulo {
+	color: var(--verde);
+}
+
 .sidebar {
     height: calc(100vh - 85px);
     width: 195px;
