@@ -91,7 +91,7 @@ section.grid {
 }
 
 section.grid img {
-    width: 50vw;
+    width: 50%;
     animation: img_appear;
     animation-duration: 3s;
 }
