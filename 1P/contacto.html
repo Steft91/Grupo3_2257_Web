@@ -9,8 +9,28 @@
     <title>Contacto</title>
 </head>
 <body>
+    <input type="checkbox" id="modoOscuro" autofill="false">
+    <label for="modoOscuro" class="modoOscuroInterruptor">🌙</label>
     <header>
         <nav>
+            <a href="/">
+                <figure class="logo">
+                    <img src="img/logo.svg" height="60" alt="Logo">
+                </figure>
+            </a>
+            <div class="links">
+                <a href="index.html">Inicio</a>
+                <a href="libreria.html">Catálogo</a>
+                <a href="acerca.html">Sobre Nosotros</a>
+                <a href="contacto.html">Contacto</a>
+            </div>
+            <div class="acciones">
+                <a href="login.html" class="login">Iniciar sesión</a>
+                <a href="carrito.html" class="carrito">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span>1</span>
+                </a>
+            </div>
         </nav>
     </header>
     <main>
@@ -28,6 +48,7 @@
                         <input type="text" class="w1-2" name="apellido" id="apellido" placeholder="Apellido">
                         <input type="email" class="w1-2" name="email" id="email" placeholder="Correo electrónico">
                         <input type="number" class="w1-2" name="telefono" id="telefono" placeholder="Teléfono">
+                        <input value="Enviar" type="submit" class="login-button" />
                     </form>
                 </div>
             </div>
