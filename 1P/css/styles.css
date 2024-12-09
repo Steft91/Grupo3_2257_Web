@@ -102,7 +102,11 @@ nav .acciones .carrito {
 }
 
 nav .acciones .login {
-    background-color: var(--verde);
+    background: linear-gradient(
+        45deg,
+        rgb(16, 87, 41) 0%,
+        rgb(18, 192, 96) 100%
+    );
     color: white;
     border-radius: 5px;
     padding: 5px 10px;
@@ -110,7 +114,7 @@ nav .acciones .login {
 
 #modoOscuro:checked ~ header nav .acciones .login {
     color: var(--verde);
-    background-color: white;
+    background: white;
 }
 
 nav .acciones .carrito span {
