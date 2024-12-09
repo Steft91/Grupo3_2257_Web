@@ -88,8 +88,17 @@ i {
 }
 
 #modoOscuro:checked ~ .contenedor .libro {
-    background-color: rgba(50, 50, 50, 0.85);
+    background-color: rgba(107, 126, 98, 0.85);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+}
+
+#modoOscuro:checked ~ .contenedor .libro button{
+    background-color: rgba(214, 203, 160, 0.85);
+    color: #333;
+}
+
+#modoOscuro:checked ~ .contenedor .libro h2{
+    color: #f4e7d1;
 }
 
 #modoOscuro:checked ~ .contenedor footer {
@@ -97,7 +106,7 @@ i {
 }
 
 #modoOscuro:checked ~ .contenedor .chat {
-    background-color: rgba(50, 50, 50, 0.85);
+    background-color: rgba(107, 126, 98, 0.85);
 }
 
 #modoOscuro:checked ~ .contenedor .headerChat {
@@ -117,11 +126,11 @@ i {
 }
 
 #modoOscuro:checked ~ .contenedor .infoTitulo {
-    color: #4CAF50;
+    color: #f4e7d1;
 }
 
 #modoOscuro:checked ~ .contenedor .infoPrecio {
-    color: #fa4682;
+    color: #c96862;
 }
 
 #modoOscuro:checked ~ .contenedor .infoAutor,
