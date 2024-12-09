@@ -11,21 +11,6 @@ p, button {
     color: #777373;
 }
 
-header {
-    height: 5px;
-}
-
-nav {
-    width: 100%;
-    height: 140px;
-    background-color: rgba(45, 74, 34, 0.8);
-    color: white;
-    text-align: center;
-    position: fixed;
-    top: 0;
-    z-index: 900;
-}
-
 .contenedor {
     background-image: url(../img/bosque.jpg);
     background-size: cover;
@@ -36,7 +21,7 @@ nav {
 
 .container {
     display: flex;
-    margin-top: 180px;
+    padding-top: 50px;
     margin-left: 20px;
     margin-right: 20px;
     margin-bottom: 20px;
@@ -154,8 +139,12 @@ nav {
     text-align: justify;
 }
 
-button {
-    background-color: #3d6d50;
+a.carrito-link {
+    background: linear-gradient(
+        45deg,
+        rgb(16, 87, 41) 0%,
+        rgb(18, 192, 96) 100%
+    );
     color: white;
     border: none;
     padding: 10px;
@@ -164,9 +153,10 @@ button {
     cursor: pointer;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.4);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none;
 }
 
-button:hover {
+a.carrito-link:hover {
     transform: scale(1.05);
     box-shadow: 0 5px 8px rgba(0, 0, 0, 0.6);
 }

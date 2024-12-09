@@ -27,14 +27,8 @@ body {
 }
 
 .categoria {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    gap: 30px;
-    margin-top: 120px;
+    padding-top: 90px;
     margin-bottom: 120px;
-    margin: 30px;
 }
 
 .sidebar {
@@ -115,8 +109,12 @@ body {
 
 .cards {
     margin-top: 50px;
+
     display: flex;
-    flex-direction: column;  
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
 }
 
 h2 {

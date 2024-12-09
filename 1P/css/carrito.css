@@ -1,15 +1,20 @@
 * {
-    background-image: url(/img/bosque.jpg);
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
-body{
+
+main {
     background-image: url(../img/bosque.jpg);
     background-size: cover;
     background-attachment: fixed;
 }
+
+#modoOscuro:checked ~ main {
+    background-image: url("../img/bosqueNoche.jpeg");
+}
+
 .principal {
     display: flex;
     align-items: center;
@@ -47,7 +52,8 @@ body{
 }
 .textoPago {
     font-size: 36px;
-    margin: 25px 0;
+    margin-bottom: 50px;
+    padding-top: 50px;
     text-align: center;
 }
 .checkout {
@@ -61,6 +67,12 @@ body{
     padding: 20px;
     background-color: #fafafa;
 }
+
+#modoOscuro:checked ~ main .shoppingCart, #modoOscuro:checked ~ main .paymentMethod {
+    background-color: hsl(0, 1%, 15%);
+    border-color: transparent;
+}
+
 .shoppingCart {
     flex: 3;
 }
@@ -173,6 +185,13 @@ button:hover {
     border-bottom: 1px solid #ddd;
 }
 
+#modoOscuro:checked ~ main .cartTable th,
+#modoOscuro:checked ~ main .cartTable td {
+    background-color: var(--verde-oscuro);
+    color: white;
+    color-scheme: dark;
+}
+
 .cartTable th {
     background-color: #f4f4f4;
     font-weight: bold;
@@ -283,4 +302,15 @@ footer .icono img {
 footer .icono:hover img {
     transform: scale(1.1);
     transition: transform 0.3s ease;
+}
+
+
+h1, h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif !important;
+    color: var(--verde);
+}
+
+#modoOscuro:checked ~ main h1,
+#modoOscuro:checked ~ main h2 {
+    color: white !important;
 }
