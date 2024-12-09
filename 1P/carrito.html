@@ -33,34 +33,37 @@
         <div class="checkout">
             <aside class="shoppingCart">
                 <div class="tituloCheckout"><h1>Carrito de compra</h1></div>
-                <div class="item">
-                    <img src="./img/harrypotter.jpg" alt="Harry Potter">
-                    <div class="item-details">
-                        <p>Harry Potter y la Piedra Filosofal</p>
-                        <p>$18.50</p>
-                    </div>
-                </div>
-                <div class="item">
-                    <img src="./img/terror2.jpg" alt="WordPress Template">
-                    <div class="item-details">
-                        <p>Cuentos de Muerte y Demencia</p>
-                        <p>$18.50</p>
-                    </div>
-                </div>
-                <div class="item">
-                    <img src="./img/invisibleDrama.jpg" alt="WordPress Template">
-                    <div class="item-details">
-                        <p>Las Ventajas de ser Invisible</p>
-                        <p>$12.75</p>
-                    </div>
-                </div>
-                <div class="item">
-                    <img src="./img/littlewomenClasico.jpg" alt="WordPress Template">
-                    <div class="item-details">
-                        <p>Little Women</p>
-                        <p>$12.55</p>
-                    </div>
-                </div>
+                <table class="cartTable">
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Precio</th>
+                            <th>Cantidad</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><img src="./img/harrypotter.jpg" alt="Harry Potter" class="productImage"> Harry Potter y la Piedra Filosofal</td>
+                            <td>$18.50</td>
+                            <td><input type="number" value="1" min="1" class="quantityInput"></td>
+                        </tr>
+                        <tr>
+                            <td><img src="./img/terror2.jpg" alt="Cuentos de Muerte y Demencia" class="productImage"> Cuentos de Muerte y Demencia</td>
+                            <td>$18.50</td>
+                            <td><input type="number" value="1" min="1" class="quantityInput"></td>
+                        </tr>
+                        <tr>
+                            <td><img src="./img/invisibleDrama.jpg" alt="Las Ventajas de ser Invisible" class="productImage"> Las Ventajas de ser Invisible</td>
+                            <td>$12.75</td>
+                            <td><input type="number" value="1" min="1" class="quantityInput"></td>
+                        </tr>
+                        <tr>
+                            <td><img src="./img/littlewomenClasico.jpg" alt="Little Women" class="productImage"> Little Women</td>
+                            <td>$12.55</td>
+                            <td><input type="number" value="1" min="1" class="quantityInput"></td>
+                        </tr>
+                    </tbody>
+                </table>
                 <div class="subtotal">
                     Subtotal: $62.30
                 </div>
@@ -71,7 +74,7 @@
                 <div><label>E-mail</label><br><input type="text" placeholder="jeff@gmail.com"></div>
             </div>
             <div class="paymentOptions">
-                <h2>Métodos de pago</h2>
+                <p>Métodos de pago</p>
                 <div class="payment-method">
                     <label>
                         <input type="radio" name="payment" value="PayPal">
